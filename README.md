@@ -9,7 +9,7 @@ You can either use **the default EmojiFaces smart contract** and play with it or
 Use the default **EmojiFaces Smart Contract:**
 
 ```bash
-  git clone ...
+  git clone https://github.com/codingwithdidem/emojifacesdapp.git
   cd emojifacesdapp
   npm install
   npm run dev
@@ -18,7 +18,7 @@ Use the default **EmojiFaces Smart Contract:**
 Use **Your Own Smart Contract:**
 
 ```bash
-  git clone ...
+  git clone https://github.com/codingwithdidem/emojifacesdapp.git
   cd emojifacesdapp
   npm install
   npm run dev
