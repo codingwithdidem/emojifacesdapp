@@ -46,7 +46,7 @@ You can also watch tutorial videos for this project
 
 ## Screenshots
 
-![App Screenshot](<(https://github.com/codingwithdidem/emojifacesdapp/blob/[branch]/image.jpg?raw=true)>)
+![App Screenshot](https://raw.githubusercontent.com/codingwithdidem/emojifacesdapp/master/public/demo.png)
 
 ## Support
 
