@@ -19,11 +19,15 @@ const Hero = () => {
   const [nftPrice, setNftPrice] = useState("0.01");
   const [isSaleActive, setIsSaleActive] = useState(false);
 
-  useEffect(async () => {
-    setMaxMintAmount(await getMaxMintAmount());
-    setNftPrice(await getNftPrice());
-    setIsSaleActive(await getSaleState());
-    await updateTotalSupply();
+  useEffect(() => {
+    const prepare = async () => {
+      setMaxMintAmount(await getMaxMintAmount());
+      setNftPrice(await getNftPrice());
+      setIsSaleActive(await getSaleState());
+      await updateTotalSupply();
+    };
+
+    prepare();
   });
 
   const updateTotalSupply = async () => {

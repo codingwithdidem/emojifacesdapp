@@ -14,12 +14,16 @@ const Header = () => {
     setStatus(walletResponse.status);
   };
 
-  useEffect(async () => {
-    const walletResponse = await getCurrentWalletConnected();
-    setWalletAddress(walletResponse.address);
-    setStatus(walletResponse.status);
+  useEffect(() => {
+    const prepare = async () => {
+      const walletResponse = await getCurrentWalletConnected();
+      setWalletAddress(walletResponse.address);
+      setStatus(walletResponse.status);
 
-    addWalletListener();
+      addWalletListener();
+    };
+
+    prepare();
   }, []);
 
   const addWalletListener = () => {
