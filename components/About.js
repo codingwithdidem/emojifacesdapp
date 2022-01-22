@@ -93,9 +93,9 @@ const About = () => {
               </div>
               <div className="pt-6 text-base leading-6 font-extralight sm:text-lg sm:leading-7">
                 <p>
-                  Emoji Faces seemed doomed to live as fancy props. Mere
+                  {`Emoji Faces seemed doomed to live as fancy props. Mere
                   portable delights for their human masters. But a few rogue
-                  ones didn't want to play the nice-faces game anymore.
+                  ones didn't want to play the nice-faces game anymore.`}
                 </p>
                 <p className="mt-8">
                   <Link href="#main">
